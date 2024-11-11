@@ -1,0 +1,25 @@
+.{
+    .name = "little-vulkan-experiment",
+    .version = "0.0.1",
+    .minimum_zig_version = "0.11.0",
+
+    .dependencies = .{
+        .vulkan_headers = .{
+            .url = "https://github.com/KhronosGroup/Vulkan-Headers/archive/refs/heads/main.zip",
+            .hash = "1220a11136d20a5580bac95fd7a4ed4f1c50c3e37a90350fa45334e0c2062008ce6c",
+        },
+        .vulkan_zig = .{
+            .url = "https://github.com/Snektron/vulkan-zig/archive/e43d635893de4c8b89d5ca8aa142984872b7e68f.tar.gz",
+            .hash = "122064f889ea10097a67fc28744fe95d0bfde9af252de147a9b90aa55cecfc30c01c",
+        },
+    },
+
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+        // For example...
+        //"LICENSE",
+        //"README.md",
+    },
+}
